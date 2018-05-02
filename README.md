@@ -1,22 +1,22 @@
-#Jenkins: what is it?
+# Jenkins: what is it?
 
 Jenkins is a continuous integration software tool. It is an open source software, developed using the Java programming language. It allows you to test and report changes made over a large code base in real time. By using this software, developers can detect and solve problems in a codebase and quickly. Thus the tests of new builds can be automated, which makes it easier to integrate changes to a project, on an ongoing basis. Jenkin's goal is to accelerate software development through automation. Jenkins enables the integration of all stages of the development cycle.
 
 Continuous integration is provided through plugins. These plugins allow the integration of various stages of Various DevOps. To integrate a particular tool, it is necessary to install the plugins corresponding to this tool: Git, Maven 2 project, Amazon EC2, HTML Publisher
 
 
-##What are the benefits of Jenkins?
+## What are the benefits of Jenkins?
 
 Jenkins has several advantages. It is an open source tool that federates a large community, constantly proposing new improvements and other improvements. The software is easy to install, and over 1000 plugins are available. If a plugin that fits your needs does not exist, you can create it yourself and share it with the community. Another advantage: Jenkins is also free. Finally, as a tool developed with Java, it can be ported to all major software platforms.
 
 In addition, Jenkins differs from most other multi-point continuous integration tools. First of all, Jenkins is adopted much more widely than its competitors. In total, there are 147,000 active installations and more than one million users around the world. Jenkins' other strength is its interconnection with over 1000 plugins to integrate with most development, testing and deployment tools.
 
-##Installation of Jenkins
+## Installation of Jenkins
 
 Install Jenkins (one of the software used as a foundation for a continuous integration platform - and the most used currently for PHP projects), if you have an integration server to date, is not very complicated : the basic idea is to download a .war, and launch it; possibly adding this launch to machine services, so that it is automated.
 
 
-####Under Ubuntu
+#### Under Ubuntu
 
 Use the Ubuntu distribution on your development machines and on your integration servers. The installation of Jenkins under Ubuntu is extremely simple.
 
@@ -30,7 +30,7 @@ You have just four lines of commands to run to install Jenkins:
 
 `sudo apt-get install jenkins`
 
-####And under Windows?
+#### And under Windows?
 
 This is usually not very useful in a PHP project (although, depending on the type of project, check its operation under a wide range of OS is not a bad idea at all), but Jenkins can also to be installed on Windows.
 
@@ -38,7 +38,7 @@ Download and install Jenkins from https://jenkins.io
 
 ![Website](https://raw.githubusercontent.com/ImDR/jenkins-blog/master/screenshots/screenshot-website.jpg "")
 
-###Once Jenkins is installed?
+### Once Jenkins is installed?
 
 Once Jenkins is installed, all you have to do is access your interface via your web browser.
 
@@ -52,7 +52,7 @@ if you have defined a DNS entry or alias in your hosts file, you will use someth
 
 `http://jenkins:8080`
 
-###Quick tour of the administration interface, and basic management
+### Quick tour of the administration interface, and basic management
 
 Now that we have Jenkins installed, and we know how to access them, let's take a quick tour of the admin interface, before we start installing the plugins that will later be used for the Continuous Integration of a PHP project.
 
@@ -93,7 +93,7 @@ That said, I can only advise you to take the time to read the help of each optio
 
 In the same spirit, do not hesitate to take a look at the other screens of the administration interface: after all, a little curiosity has never hurt ;-)
 
-###Installing plugins
+### Installing plugins
 
 A great wealth of Jenkins (which, basically, does not do much - especially in terms of PHP projects) is its system of plugins, as well as the large number of existing plugins.
 
@@ -120,7 +120,7 @@ And finally, a fourth tab "Advanced", which will allow you, if necessary, to con
 
 Now that our Jenkins Continuous Integration Platform is installed, with all the plugins we will need for our PHP projects, all we have to do is configure it, before we can switch to IC implementation. a PHP project.
 
-####System configuration
+#### System configuration
 We'll go back to the "Administer Jenkins> Configure the System" screen that we've been looking at above, and review some of the configuration items that may be interesting - knowing that much depends on it of your needs.
 
 
